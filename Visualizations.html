@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sales Visualization</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.css">
+</head>
+<body>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Flavors Unleashed</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <section id="main" class="wrapper style5">
+            <div class="inner">
+                <header class="major">
+                    <h2>Sales Visualization</h2>
+                </header>
+                <!-- Pie Chart -->
+                <div class="inner">
+                    <h3 style="text-align: center;">Views Distribution</h3>
+                    <div class="chart-container" style="position: relative; height:400px; width:80vw; margin: 0 auto;">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </br>
+                    <p style="text-align: center;">
+                        Pie chart depicting the percentage of views for each item.
+                    </p>
+                </div>
+                <!-- Bar Chart -->
+                <div class="inner" style="margin-top: 50px; margin-right: 40px;">
+                    <h3 style="text-align: center;">Difficulty Level</h3>
+                    <div class="chart-container" style="position: relative; height:400px; width:80vw; margin: 0 auto;">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </br>
+                    <p style="text-align: center;">
+                        Bar chart depicting the difficulty level of making each item on a scale of 10.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled</li><li>Design: <a href="">Kanya Raasi</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script>
+        // Pie chart data
+        var pieData = {
+            labels: ['Butter Chicken', 'Chicken Biryani', 'Vegetable Biryani', 'Paneer Tikka Masala', 'Paneer Biryani', 'Samosa', 'Cutlet', 'Falooda', 'Butter Milk', 'Dosa', 'Idly', 'Paratha', 'Raita'],
+            datasets: [{
+                data: [5, 30, 15, 10, 8, 5, 5, 3, 2, 20, 15, 10, 7],
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#00cc66', '#cc6600', '#996633', '#993399', '#ccff66', '#ff6666', '#00ffcc', '#ff99ff', '#cccc00', '#0099ff']
+            }]
+        };
+
+        // Bar chart data
+        var barData = {
+            labels: ['Butter Chicken', 'Chicken Biryani', 'Vegetable Biryani', 'Paneer Tikka Masala', 'Paneer Biryani', 'Samosa', 'Cutlet', 'Falooda', 'Butter Milk', 'Dosa', 'Idly', 'Paratha', 'Raita'],
+            datasets: [{
+                label: 'Difficulty',
+                data: [8, 9, 6, 5, 7, 4, 4, 3, 2, 6, 5, 7, 3],
+                backgroundColor: '#36A2EB'
+            }]
+        };
+
+        // Pie chart options
+        var pieOptions = {
+            responsive: true,
+            maintainAspectRatio: false
+        };
+
+        // Bar chart options
+        var barOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Get pie chart canvas
+        var pieChartCanvas = document.getElementById('pieChart').getContext('2d');
+
+        // Get bar chart canvas
+        var barChartCanvas = document.getElementById('barChart').getContext('2d');
+
+        // Create pie chart
+        var pieChart = new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: pieData,
+            options: pieOptions
+        });
+
+        // Create bar chart
+        var barChart = new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barData,
+            options: barOptions
+        });
+    </script>
+</body>
+</html>

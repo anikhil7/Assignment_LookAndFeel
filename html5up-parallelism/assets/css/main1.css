@@ -1,0 +1,55 @@
+/* main.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+header#header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+header#header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header#header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section#main h2 {
+    color: #009879;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009879;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer#footer ul.icons {
+    padding: 0;
+}
+
+footer#footer ul.icons li {
+    display: inline;
+    margin-right: 5px;
+}
+
+footer#footer p {
+    color: #666;
+}

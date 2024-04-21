@@ -1,0 +1,51 @@
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#storeTable {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    color: black;
+}
+
+#storeTable th, #storeTable td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: left;
+}
+
+#page-wrapper {
+    background-image: url('../../images/BackG.jpg'); /* Provide the correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensure it covers at least the viewport height */
+}
+
+/* Ensure text in the search bar is black */
+#searchBar {
+    color: black; /* This is actually already set by your inline style, but it's better to keep styling in CSS files */
+}
+
+/* Change placeholder color to black in all browsers */
+#searchBar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+#searchBar:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+#searchBar::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+/* Ensure text in table headers is black */
+#storeTable th {
+    color: black; /* Set table header text color to black */
+}
+
