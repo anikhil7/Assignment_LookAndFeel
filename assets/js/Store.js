@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "Amber Alcove", address: "147 Lakeview Dr", state: "Uttar Pradesh" },
         { name: "Onyx Oven", address: "234 Peachtree St", state: "Madhya Pradesh" },
         { name: "Topaz Tavern", address: "567 Broadway Ave", state: "Bihar" },
-        { name: "Jade Junction", address: "103 Sunset Blvd", state: "Goa" }
+        { name: "Jade Junction", address: "103 Sunset Blvd", state: "Goa" },
+        { name: "Nawabi", address: "14204 Cyber PL", state: "Andhra Pradesh" },
     ];
 
     const searchBar = document.getElementById('searchBar');
