@@ -1,8 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
     const stores = [
-        { name: "Nakshatra", address: "123 Main St", state: "California" },
-        { name: "Subhani", address: "456 Elm St", state: "Texas" },
-        { name: "Nagarjuna Grand", address: "789 Oak St", state: "Florida" }
+        { name: "Azure Bistro", address: "1010 Market St", state: "Maharashtra" },
+        { name: "Orchid Eatery", address: "202 Pine Ln", state: "Kerala" },
+        { name: "Ruby Lounge", address: "304 West Ave", state: "Tamil Nadu" },
+        { name: "Emerald Greens", address: "450 Vine St", state: "Karnataka" },
+        { name: "Golden Spoon", address: "123 Oak Rd", state: "Telangana" },
+        { name: "Copper Pot", address: "222 Maple Ave", state: "Gujarat" },
+        { name: "Silver Fork", address: "556 Elm Dr", state: "Rajasthan" },
+        { name: "Platinum Grill", address: "789 Birch Pl", state: "West Bengal" },
+        { name: "Diamond Deli", address: "321 Cedar Blvd", state: "Odisha" },
+        { name: "Garnet Garden", address: "654 Spruce Way", state: "Punjab" },
+        { name: "Sapphire Sweets", address: "908 River Rd", state: "Haryana" },
+        { name: "Amber Alcove", address: "147 Lakeview Dr", state: "Uttar Pradesh" },
+        { name: "Onyx Oven", address: "234 Peachtree St", state: "Madhya Pradesh" },
+        { name: "Topaz Tavern", address: "567 Broadway Ave", state: "Bihar" },
+        { name: "Jade Junction", address: "103 Sunset Blvd", state: "Goa" }
     ];
 
     const searchBar = document.getElementById('searchBar');
