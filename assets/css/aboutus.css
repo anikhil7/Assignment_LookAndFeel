@@ -1,38 +1,33 @@
-.team-section {
-    width: 80%;
-    margin: 20px auto;
-    text-align: center;
-    padding-top: 200px;
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-.card {
-    position: relative;
-    display: inline-block;
-    margin: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px 0px #aaa;
-    transition: transform 0.1s ease;
-}
+    .team-member img {
+        width: 250px;
+        height: 250px;
+        margin-right: 20px;
+        border: 3px solid #ccc;
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 200px;
-    height: 200px;
-}
-
-.info {
-    display: none;
-    text-align: left;
-    padding: 10px;
-}
-
-.card:hover .info {
-    display: block;
-}
-
-h1, h2 {
+.member-info h2 {
+    margin: 0 0 10px 0;
     color: #333;
+}
+
+.member-info p {
+    margin: 0;
+    color: #666;
+}
+
+.AboutHeader h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 50px;
 }
