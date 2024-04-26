@@ -12,14 +12,14 @@
     <div id="page-wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <h1><a href="index.html">Flavors Unleashed</a></h1>
+            <h1><a href="Index.html">Flavors Unleashed</a></h1>
             <nav id="nav">
                 <ul>
                     <li class="special">
-                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <a href="Index.html" class="menuToggle"><span>Menu</span></a>
                         <div id="menu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Index.html">Home</a></li>
                             </ul>
                         </div>
                     </li>
@@ -31,17 +31,17 @@
         <section id="main" class="wrapper style5">
             <div class="inner">
                 <header class="major">
-                    <h2>Sales Visualization</h2>
+                    <h2>Stat Visualization</h2>
                 </header>
                 <!-- Pie Chart -->
                 <div class="inner">
-                    <h3 style="text-align: center;">Views Distribution</h3>
+                    <h3 style="text-align: center;">Category wise menu Distribution</h3>
                     <div class="chart-container" style="position: relative; height:400px; width:80vw; margin: 0 auto;">
                         <canvas id="pieChart"></canvas>
                     </div>
                     <br>
                     <p style="text-align: center;">
-                        Pie chart depicting the percentage of views for each item.
+                        Pie chart depicting the percentage of each chategory.
                     </p>
                 </div>
                 <!-- Bar Chart -->
@@ -100,21 +100,21 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.scrollex.min.js"></script>
+    <script src="~/js/jquery.scrolly.min.js"></script>
+    <script src="~/js/browser.min.js"></script>
+    <script src="~/js/breakpoints.min.js"></script>
+    <script src="~/js/util.js"></script>
+    <script src="~/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script>
         // Pie chart data
         var pieData = {
-            labels: ['Butter Chicken', 'Chicken Biryani', 'Vegetable Biryani', 'Paneer Tikka Masala', 'Paneer Biryani', 'Samosa', 'Cutlet', 'Falooda', 'Butter Milk', 'Dosa', 'Idly', 'Paratha', 'Raita'],
+            labels: ['BreakFast', 'Lunch', 'Snacks', 'Beverages'],
             datasets: [{
-                data: [5, 30, 15, 10, 8, 5, 5, 3, 2, 20, 15, 10, 7],
-                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#00cc66', '#cc6600', '#996633', '#993399', '#ccff66', '#ff6666', '#00ffcc', '#ff99ff', '#cccc00', '#0099ff']
+                data: [5, 8, 5, 3],
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#00cc66']
             }]
         };
 
